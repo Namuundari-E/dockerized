@@ -1,0 +1,267 @@
+div#navisection {
+    padding: 5px 20px;
+    }
+#navisection ul { margin-bottom: 0; }
+#navisection li {
+display: inline-block;
+list-style-type: none;
+position: relative;
+ margin: 0 10px 0 0; /* баруун талд 10px, бусдаар 0 */
+}
+#navisection a {
+    color: black; 
+    text-decoration: none;
+    font-size: large;
+}
+#navisection ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* Background color for the dropdown */
+    border: 1px solid #ccc; /* Border color */
+    padding: 5px 0;
+    width: 110px;
+}
+
+#navisection ul li:hover > ul {
+    display: block;
+}
+
+#navisection ul li ul li {
+    display: block;
+}
+
+#navisection ul li ul li a {
+    display: block;
+    color: #333; /* Text color */
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+#navisection ul li ul li a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+.trending{
+    font-size: 16;
+    padding-left: 5%;
+    color: blue;}
+.trending a{
+    text-decoration: none;
+    color: blue;
+}
+header{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Ensures items are spaced evenly */
+    align-items: center; /* Centers items vertically */
+}
+
+.container {
+    width: 100%;
+    padding-right: 20px;
+    display: flex; /* Make container a flex container */
+    align-items: center; /* Center items vertically within container */
+}
+
+
+.social-icons {
+    display: flex;
+    padding-right: 50px;
+}
+
+.social-icons a {
+    color: black;
+    font-size: medium;
+    padding-right: 50px;
+}
+
+.navbar-brand{
+    width:3000px;
+    color: black;
+    display: flex;
+    text-decoration: none; 
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+    padding-left: 60px;
+}
+.brand-content h3 {
+    font-family: Roboto;
+    display: flex;
+    font-size: 40px;
+}
+body {
+    font-family: roboto;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: right;
+}
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.banner.p {
+    font-size: small;
+}
+
+footer{
+    background: var(--exDark);
+    color: black;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid black;
+    color: black;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: black;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+.wide-line {
+    border: 0;
+    height: 5px; /* Adjust the height as needed */
+    background-color: black; /* You can change the color to your preference */
+    margin: 20px 0; /* Adjust the margin as needed */
+  }
+  
+  /* CSS for the narrow line */
+  .narrow-line {
+    border: 0;
+    height: 1px; /* Adjust the height as needed */
+    background-color: black; /* You can change the color to your preference */
+    margin: 10px 0; /* Adjust the margin as needed */
+  }
+
+/*Content*/
+.clearfix::after{/*footer hesgiig salgah*/
+    content: '';
+    display: block;
+    clear: both;
+}
+.content{
+    width: 80%;
+    margin: 30px auto 30px;
+    padding: 20px;
+    background-color: rgb(243, 243, 243);
+    
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.content .text{
+    display: inline-block;
+    width:50%;
+    padding: 10px;
+}
+.content .big-pic{
+    display: inline-block;
+    vertical-align: top;
+    width:300px;
+    height: 150px;
+}
+.content .big-pic img{
+    width: 400px;
+    height: 230px;
+}
+.travel{
+    color: rgb(216, 33, 33);
+}
+.text a{
+    text-decoration: none;
+    color: black;
+}
+.content .left-content{
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex; 
+    flex-wrap: wrap;
+}
+.text1 a {
+    text-decoration: none;
+    color: black;
+}
+.content .small-pic,
+.content .text1 {
+    display: inline-block;
+    vertical-align: top; /* Align them to the top */
+    width: 50%; /* Make each column occupy 50% of the container width */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 10px; /* Add padding as needed */
+} 
+.small-pic img{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+}
+
+.content .right-sidebar{
+width: 30%;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.text-input{
+    padding: .7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    outline:none;
+    color: #444;
+    border: 1px solid;
+}
+.content .Right-sidebar .section ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.content .Right-sidebar .section ul li a{
+    display: block;
+    padding: 15px 0px;
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+    color:#444
+}
+.content .Right-sidebar .section ul li a:hover{
+    padding-left: 20px; 
+    background-color: #e0e0e0;
+}
